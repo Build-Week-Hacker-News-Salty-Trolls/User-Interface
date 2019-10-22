@@ -22,15 +22,61 @@
 
 
 header {
-  height: 60rem;
-  background: url(../img/salt1.jpg) @bg-color-two;
+  height: 600px;
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../img/salt1.jpg) @bg-color-two;
   background-size: cover;
   background-repeat: no-repeat;
   // position: relative;
 
+  .custom-layout(@direction: column);
+
   .header-text {
+    width: 500px;
+    padding: 20px 40px;
     background-color: @bg-color-one;
-    border: 1px solid red;
+    .custom-layout(@justify: center, @direction:column);
+
+    .main-text {
+      padding: 10px 0;  
+      .custom-layout(@direction: row, @align: center);
+      border: 5px custom blue;
+      // background-color: blue;
+      width: 100%;
+
+      h1 {
+        color: black;
+        font-weight: bold;
+        font-family: 'Roboto';
+      }
+      .hs-icon {
+        margin-right: 20px;
+        padding: 10px;
+        border: 2px solid white;
+        font-size: @h1-font-size;
+      }
+    }
+  }
+
+  .search-bar {
+    margin-top: 30px;
+    width: 400px;
+
+    input {
+      height: @search-bar-height;
+      width:89%;
+      border: none;
+      margin-right: -2px;
+      font-size: 1.6rem;
+
+    }
+
+    button {
+      height: @search-bar-height;
+      width: 10%;
+      border: none;
+      font-size: 1.6rem;
+      background-color: #B0C4DE;
+    }
   }
 
 

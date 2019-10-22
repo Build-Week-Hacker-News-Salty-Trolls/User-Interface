@@ -146,7 +146,7 @@ h5 {
   color: white;
 }
 h1 {
-  font-size: 3.5rem;
+  font-size: 5.6rem;
 }
 h2 {
   font-size: 3.2rem;
@@ -188,12 +188,62 @@ a {
   flex-wrap: no-wrap;
 }
 header {
-  height: 60rem;
-  background: url(../img/salt1.jpg) #0260f8;
+  height: 600px;
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../img/salt1.jpg) #0260f8;
   background-size: cover;
   background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: no-wrap;
 }
 header .header-text {
+  width: 500px;
+  padding: 20px 40px;
   background-color: #F86502;
-  border: 1px solid red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: no-wrap;
+}
+header .header-text .main-text {
+  padding: 10px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: no-wrap;
+  border: 5px custom blue;
+  width: 100%;
+}
+header .header-text .main-text h1 {
+  color: black;
+  font-weight: bold;
+  font-family: 'Roboto';
+}
+header .header-text .main-text .hs-icon {
+  margin-right: 20px;
+  padding: 10px;
+  border: 2px solid white;
+  font-size: 5.6rem;
+}
+header .search-bar {
+  margin-top: 30px;
+  width: 400px;
+}
+header .search-bar input {
+  height: 40px;
+  width: 89%;
+  border: none;
+  margin-right: -2px;
+  font-size: 1.6rem;
+}
+header .search-bar button {
+  height: 40px;
+  width: 10%;
+  border: none;
+  font-size: 1.6rem;
+  background-color: #B0C4DE;
 }
