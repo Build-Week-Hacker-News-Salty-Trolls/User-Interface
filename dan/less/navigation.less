@@ -1,10 +1,13 @@
 .nav-container {
-  height: 50px;
   background-color: @bg-color-one;
 
   nav {
     padding: 0 30px;
     .custom-layout(@justify: space-between);
+
+    @media @phone {
+      padding: 0 15px;
+    }
 
     a {
       img {
@@ -21,5 +24,9 @@
 
 .links {
   width: 500px;
-  .custom-layout(@justify: space-between)
+  .custom-layout(@justify: space-between);
+
+  @media @phone {
+    width: 85%;
+  }
 }

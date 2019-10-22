@@ -165,7 +165,6 @@ a {
   font-size: 1.6rem;
 }
 .nav-container {
-  height: 50px;
   background-color: #F86502;
 }
 .nav-container nav {
@@ -175,6 +174,11 @@ a {
   align-items: center;
   flex-direction: row;
   flex-wrap: no-wrap;
+}
+@media (max-width: 500px) {
+  .nav-container nav {
+    padding: 0 15px;
+  }
 }
 .nav-container nav a img {
   height: 45px;
@@ -190,6 +194,11 @@ a {
   align-items: center;
   flex-direction: row;
   flex-wrap: no-wrap;
+}
+@media (max-width: 500px) {
+  .links {
+    width: 85%;
+  }
 }
 footer {
   height: 70px;
@@ -221,6 +230,11 @@ header .header-text {
   align-items: center;
   flex-direction: column;
   flex-wrap: no-wrap;
+}
+@media (max-width: 500px) {
+  header .header-text {
+    width: 100%;
+  }
 }
 header .header-text .main-text {
   padding: 10px 0;
@@ -277,6 +291,11 @@ header .search-bar button {
   flex-direction: row;
   flex-wrap: no-wrap;
 }
+@media (max-width: 500px) {
+  .full-width-container:nth-child(odd) .content-section {
+    flex-direction: column;
+  }
+}
 .full-width-container:nth-child(odd) .content-section .img-container {
   display: flex;
   justify-content: flex-end;
@@ -305,6 +324,12 @@ header .search-bar button {
   padding: 20px 30px;
   height: 450px;
 }
+@media (max-width: 500px) {
+  .content-section {
+    flex-direction: column;
+    height: 600px;
+  }
+}
 .content-section .img-container {
   width: 48%;
   height: 100%;
@@ -314,9 +339,17 @@ header .search-bar button {
   flex-direction: row;
   flex-wrap: no-wrap;
 }
+@media (max-width: 500px) {
+  .content-section .img-container {
+    width: 100%;
+    justify-content: center;
+    margin-bottom: 15px;
+  }
+}
 .content-section .img-container img {
   max-width: 100%;
   height: 100%;
+  border-radius: 10px;
 }
 .content-section .text-content {
   width: 48%;
@@ -325,6 +358,11 @@ header .search-bar button {
   align-items: center;
   flex-direction: column;
   flex-wrap: no-wrap;
+}
+@media (max-width: 500px) {
+  .content-section .text-content {
+    width: 100%;
+  }
 }
 .content-section .text-content p {
   font-size: 2rem;
