@@ -11,6 +11,10 @@
         height: 45px;
         width: auto;
       }
+
+      &:hover {
+        color: @link-hover;
+      }
     }
   }
 }
@@ -23,7 +27,7 @@
 
 header {
   height: 600px;
-  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../img/salt1.jpg) @bg-color-two;
+  background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url(../img/salt1.jpg) @bg-color-two;
   background-size: cover;
   background-repeat: no-repeat;
   // position: relative;
@@ -33,6 +37,7 @@ header {
   .header-text {
     width: 500px;
     padding: 20px 40px;
+    border-radius: 5px;
     background-color: @bg-color-one;
     .custom-layout(@justify: center, @direction:column);
 
@@ -65,8 +70,9 @@ header {
       height: @search-bar-height;
       width:89%;
       border: none;
-      margin-right: -2px;
+      margin-right: -3px;
       font-size: 1.6rem;
+      border-radius: 5px 0 0 5px;
 
     }
 
@@ -76,8 +82,45 @@ header {
       border: none;
       font-size: 1.6rem;
       background-color: #B0C4DE;
+      border-radius: 0 5px 5px 0;
     }
   }
+}
 
 
+// .full-width-container {
+//   width: 100%;
+// }
+
+.full-width-container {
+  background-color: @bg-color-one;
+}
+
+.full-width-container:nth-child(odd) {
+  background-color: @bg-color-two;
+  color: @alt-font-color;
+  .content-section{
+    .custom-layout();
+  }
+  h2 {
+    color: @alt-font-color;
+  }
+}
+
+.content-section {
+  .custom-layout(@direction:row-reverse);
+  padding: 20px 0;
+  height: 450px;
+
+
+    img {
+      width: 48%;
+      max-height: 100%;
+    }
+
+  .text-content {
+    width: 48%;
+    // border: 1px solid red;
+    .custom-layout(@justify: flex-start, @direction: column);
+  }
 }

@@ -149,7 +149,7 @@ h1 {
   font-size: 5.6rem;
 }
 h2 {
-  font-size: 3.2rem;
+  font-size: 4rem;
 }
 h3 {
   font-size: 2.8rem;
@@ -179,6 +179,9 @@ a {
   height: 45px;
   width: auto;
 }
+.nav-container nav a:hover {
+  color: #0260f8;
+}
 .links {
   width: 500px;
   display: flex;
@@ -189,7 +192,7 @@ a {
 }
 header {
   height: 600px;
-  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../img/salt1.jpg) #0260f8;
+  background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url(../img/salt1.jpg) whitesmoke;
   background-size: cover;
   background-repeat: no-repeat;
   display: flex;
@@ -201,6 +204,7 @@ header {
 header .header-text {
   width: 500px;
   padding: 20px 40px;
+  border-radius: 5px;
   background-color: #F86502;
   display: flex;
   justify-content: center;
@@ -237,8 +241,9 @@ header .search-bar input {
   height: 40px;
   width: 89%;
   border: none;
-  margin-right: -2px;
+  margin-right: -3px;
   font-size: 1.6rem;
+  border-radius: 5px 0 0 5px;
 }
 header .search-bar button {
   height: 40px;
@@ -246,4 +251,43 @@ header .search-bar button {
   border: none;
   font-size: 1.6rem;
   background-color: #B0C4DE;
+  border-radius: 0 5px 5px 0;
+}
+.full-width-container {
+  background-color: #F86502;
+}
+.full-width-container:nth-child(odd) {
+  background-color: whitesmoke;
+  color: #2F4F4F;
+}
+.full-width-container:nth-child(odd) .content-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: no-wrap;
+}
+.full-width-container:nth-child(odd) h2 {
+  color: #2F4F4F;
+}
+.content-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row-reverse;
+  flex-wrap: no-wrap;
+  padding: 20px 0;
+  height: 450px;
+}
+.content-section img {
+  width: 48%;
+  max-height: 100%;
+}
+.content-section .text-content {
+  width: 48%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: no-wrap;
 }
