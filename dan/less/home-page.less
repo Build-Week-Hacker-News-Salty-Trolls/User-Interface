@@ -1,0 +1,37 @@
+.nav-container {
+  height: 50px;
+  background-color: @bg-color-one;
+
+  nav {
+    padding: 0 30px;
+    .custom-layout(@justify: space-between);
+
+    a {
+      img {
+        height: 45px;
+        width: auto;
+      }
+    }
+  }
+}
+
+.links {
+  width: 500px;
+  .custom-layout(@justify: space-between)
+}
+
+
+header {
+  height: 60rem;
+  background: url(../img/salt1.jpg) @bg-color-two;
+  background-size: cover;
+  background-repeat: no-repeat;
+  // position: relative;
+
+  .header-text {
+    background-color: @bg-color-one;
+    border: 1px solid red;
+  }
+
+
+}
