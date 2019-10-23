@@ -389,11 +389,76 @@ footer {
 .about-body {
   background-color: whitesmoke;
 }
-.about-body h1,
-.about-body h2,
-.about-body h3,
-.about-body h4,
-.about-body p,
-.about-body i {
+.container {
+  max-width: 1000px;
+  width: 100%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: no-wrap;
+}
+.about-header {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: no-wrap;
+  margin: 40px 0 40px 0;
+  padding: 0 10px;
+  width: 80%;
+  justify-content: center;
+}
+.about-header h1,
+.about-header p {
   color: #2F4F4F;
+}
+.about-header h1 {
+  margin-bottom: 20px;
+}
+.about-header p {
+  text-align: center;
+  line-height: 2.5rem;
+}
+.about-header .hack-salt {
+  font-family: monospace;
+}
+.team-container {
+  width: 100%;
+  background-color: #F86502;
+  border-radius: 20px;
+  padding: 20px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.team-container .team-member {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: no-wrap;
+  width: 31%;
+  margin: 10px 10px 20px 10px;
+}
+.team-container .team-member img {
+  max-width: 90%;
+  height: 200px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+}
+.team-container .team-member h2 {
+  font-size: 3rem;
+  margin-bottom: 0;
+}
+.team-container .team-member .member-role {
+  margin-bottom: 5px;
+}
+.team-container .team-member .github-handle a:hover {
+  color: #0260f8;
+}
+.team-container .team-member .github-handle i {
+  font-size: 2rem;
 }
