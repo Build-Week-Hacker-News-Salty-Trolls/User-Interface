@@ -323,11 +323,13 @@ header .search-bar button {
   flex-wrap: no-wrap;
   padding: 20px 30px;
   height: 450px;
+  min-width: 1000px;
 }
 @media (max-width: 500px) {
   .content-section {
     flex-direction: column;
     height: 600px;
+    min-width: 400px;
   }
 }
 .content-section .img-container {
