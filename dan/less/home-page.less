@@ -66,6 +66,7 @@
 
 .full-width-container {
   background-color: @bg-color-one;
+  .custom-layout(@direction: column);
 }
 
 // Mother-flippin' nth-child thing!
@@ -103,17 +104,16 @@
   .custom-layout( @direction:row-reverse);
   padding: 20px 30px;
   height: 450px;
-  min-width: 1000px;
+  width: 95%; 
 
   @media @phone {
     flex-direction: column;
     height: 600px;
-    min-width: 400px;
   }
 
   .img-container {
     width: 48%;
-    height: 100%;  
+    height: auto; 
     .custom-layout(@justify: flex-start);
 
     @media @phone {
@@ -123,8 +123,8 @@
     }
 
     img {
-      max-width: 100%;
-      height: 100%; 
+      width: 100%; 
+      height: auto;
       border-radius: 10px;
     }
   }
@@ -140,6 +140,11 @@
     p {
       font-size: 2rem;
       margin-bottom: 10px;
+      text-align: center;
+
+      @media @phone {
+        text-align: left;
+      }
     }
 
     .btn {
