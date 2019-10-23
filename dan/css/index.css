@@ -386,3 +386,14 @@ footer {
   color: whitesmoke;
   background-color: #2F4F4F;
 }
+.about-body {
+  background-color: whitesmoke;
+}
+.about-body h1,
+.about-body h2,
+.about-body h3,
+.about-body h4,
+.about-body p,
+.about-body i {
+  color: #2F4F4F;
+}
