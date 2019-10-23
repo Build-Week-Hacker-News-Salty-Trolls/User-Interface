@@ -1,0 +1,32 @@
+.nav-container {
+  background-color: @bg-color-one;
+
+  nav {
+    padding: 0 30px;
+    .custom-layout(@justify: space-between);
+
+    @media @phone {
+      padding: 0 15px;
+    }
+
+    a {
+      img {
+        height: 45px;
+        width: auto;
+      }
+
+      &:hover {
+        color: @link-hover;
+      }
+    }
+  }
+}
+
+.links {
+  width: 500px;
+  .custom-layout(@justify: space-between);
+
+  @media @phone {
+    width: 85%;
+  }
+}

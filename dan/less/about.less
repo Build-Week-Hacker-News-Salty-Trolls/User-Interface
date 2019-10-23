@@ -1,0 +1,87 @@
+// Styles for 'About' page
+
+.about-body {
+  background-color: @bg-color-two;
+}
+
+ .container {
+  max-width: 1000px;
+  width: 100%;
+  margin: auto;
+  .custom-layout(@direction: column;);
+}
+
+.about-header {
+  .custom-layout(@direction: column);
+  margin: 40px 0 40px 0;
+  padding: 0 10px;
+  width: 80%;
+  justify-content: center;
+
+  h1, p {
+    color: @alt-font-color;
+  }
+  h1 {
+    margin-bottom: 20px;
+  }
+  p {
+    text-align: center;
+    line-height: 2.5rem;
+  }
+
+  .hack-salt {
+    font-family: monospace;
+  }
+}
+
+.team-container {
+  width: 100%;
+  background-color: @bg-color-one;
+  border-radius: 20px;
+  padding: 20px;
+  .custom-layout(@justify: flex-start, @align: flex-end, @wrap: wrap);
+
+  @media @phone {
+    width: 90%;
+  }
+  .team-member {
+    .custom-layout(@direction: column;);
+    width: 31%;
+    margin: 10px 10px 20px 10px;
+
+    @media @phone {
+      width: 100%;
+    }
+
+    img {
+      max-width: 90%;
+      height: 200px;
+      margin-bottom: 10px;
+      border-radius: 10px;
+
+      @media @phone {
+        height: 300px;
+        max-width: 100%;
+      }
+    }
+
+    h2 {
+      font-size: 3rem;
+      margin-bottom: 0;
+    }
+
+    .member-role {
+      margin-bottom: 5px;
+    }
+
+    .github-handle {
+      a:hover{
+        color: @complementary-blue;
+      }
+      i {
+        font-size: 2rem;
+      }
+    }
+   
+  }
+}
