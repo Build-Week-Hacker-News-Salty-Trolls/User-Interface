@@ -204,16 +204,29 @@
   padding: 20px;
   .custom-layout(@justify: flex-start, @align: flex-end, @wrap: wrap);
 
+  @media @phone {
+    width: 90%;
+  }
   .team-member {
     .custom-layout(@direction: column;);
     width: 31%;
     margin: 10px 10px 20px 10px;
+
+    @media @phone {
+      width: 100%;
+      // border: 1px solid black;
+    }
 
     img {
       max-width: 90%;
       height: 200px;
       margin-bottom: 10px;
       border-radius: 10px;
+
+      @media @phone {
+        height: 300px;
+        max-width: 100%;
+      }
     }
 
     h2 {
