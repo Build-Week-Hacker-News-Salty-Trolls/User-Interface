@@ -209,7 +209,7 @@ footer {
   flex-direction: row;
   flex-wrap: no-wrap;
 }
-header {
+.homepage-header {
   height: 600px;
   background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url(../img/salt1.jpg) whitesmoke;
   background-size: cover;
@@ -220,7 +220,7 @@ header {
   flex-direction: column;
   flex-wrap: no-wrap;
 }
-header .header-text {
+.homepage-header .header-text {
   width: 500px;
   padding: 20px 40px;
   border-radius: 5px;
@@ -232,11 +232,11 @@ header .header-text {
   flex-wrap: no-wrap;
 }
 @media (max-width: 500px) {
-  header .header-text {
+  .homepage-header .header-text {
     width: 100%;
   }
 }
-header .header-text .main-text {
+.homepage-header .header-text .main-text {
   padding: 10px 0;
   display: flex;
   justify-content: center;
@@ -246,22 +246,22 @@ header .header-text .main-text {
   border: 5px custom blue;
   width: 100%;
 }
-header .header-text .main-text h1 {
+.homepage-header .header-text .main-text h1 {
   color: black;
   font-weight: bold;
   font-family: 'Roboto';
 }
-header .header-text .main-text .hs-icon {
+.homepage-header .header-text .main-text .hs-icon {
   margin-right: 20px;
   padding: 10px;
   border: 2px solid white;
   font-size: 5.6rem;
 }
-header .search-bar {
+.homepage-header .search-bar {
   margin-top: 30px;
   width: 400px;
 }
-header .search-bar input {
+.homepage-header .search-bar input {
   height: 40px;
   width: 89%;
   border: none;
@@ -269,7 +269,7 @@ header .search-bar input {
   font-size: 1.6rem;
   border-radius: 5px 0 0 5px;
 }
-header .search-bar button {
+.homepage-header .search-bar button {
   height: 40px;
   width: 10%;
   border: none;
