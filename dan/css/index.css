@@ -308,6 +308,11 @@ footer {
   flex-direction: row;
   flex-wrap: no-wrap;
 }
+@media (max-width: 500px) {
+  .full-width-container:nth-child(odd) .content-section .img-container {
+    justify-content: center;
+  }
+}
 .full-width-container:nth-child(odd) .content-section .btn {
   background-color: #F86502;
   color: white;
@@ -338,7 +343,8 @@ footer {
 }
 .content-section .img-container {
   width: 48%;
-  height: auto;
+  height: 100%;
+  max-height: 100%;
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -353,9 +359,14 @@ footer {
   }
 }
 .content-section .img-container img {
-  width: 100%;
-  height: auto;
+  max-width: 100%;
+  height: 400px;
   border-radius: 10px;
+}
+@media (max-width: 500px) {
+  .content-section .img-container img {
+    height: 290px;
+  }
 }
 .content-section .text-content {
   width: 48%;
